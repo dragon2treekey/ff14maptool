@@ -67,20 +67,67 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
   .news{
-  width: 500px;
-  height: 450px;
-  border-style: groove;
-  float: left;
-  margin-top: 20px;
-  margin-left: 100px;
+    width: 500px;
+    height: 450px;
+    border-style: groove;
+    float: left;
+    margin-top: 20px;
+    margin-left: 100px;
+
+    h2{
+      font-family: Times New Roman;
+      margin-left: 20px;
+      font-size: 30px;
+    }
+
+    .news_contents{
+      width: 440px;
+      height: 390px;
+      margin: 0 auto;
+      border-style: groove none none none;
+
+
+      p.times{
+        font-family: Times New Roman;
+        font-size: 20px;
+        padding: 5px 0;
+      }
+
+      p.news_naiyou{
+        font-family: Times New Roman;
+        font-size: 25px;
+        padding: 5px 0;
+        border-style: none none groove none;
+      }
+    }
   }
 
-  .profile{
-  width: 500px;
-  height: 450px;
-  border-style: groove;
-  float: left;
-  margin-top: 20px;
-  margin-left: 63px;
+  .contact{
+    width: 500px;
+    height: 450px;
+    border-style: groove;
+    float: left;
+    margin-top: 20px;
+    margin-left: 63px;
+
+    h2{
+      font-family: Times New Roman;
+      margin-left: 20px;
+      font-size: 30px;
+    }
+
+    .contact_contents{
+      width: 440px;
+      height: 390px;
+      margin: 0 auto;
+      border-style: groove none none none;
+
+      p.contact_naiyou{
+        font-family: Times New Roman;
+        font-size: 20px;
+        padding: 5px 0;
+        border-style: none none groove none;
+      }
+    }
   }
 }

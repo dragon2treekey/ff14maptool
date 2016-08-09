@@ -8,11 +8,11 @@
 </head>
 <body>
   <header class="mainheader">
-    <h1><%= image_tag 'FF14map_header.png', :size => "200x40" %>
+    <h1> <%= link_to image_tag('FF14map_header.png', :size => "200x40"), root_path %>
     <% if user_signed_in? %>
       <div class="user_nav grid-6">
+        <%= link_to "G8MAP", g8map_path, method: :get %>
         <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
-        <!-- <a class="post" href="/ff14map/show">投稿する</a> -->
       </div>
     <% else %>
       <div class="grid-6">

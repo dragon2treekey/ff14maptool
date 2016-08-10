@@ -3,8 +3,7 @@ class User < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable
   attr_accessor :group_key
   devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :trackable, :validatable, :confirmable,
-         authentication_keys: [:email, :group_key]
+         :recoverable, :rememberable, :trackable, :validatable, authentication_keys: [:email, :group_key]
   belongs_to :group
 
   before_validation :group_key_to_id, if: :has_group_key?

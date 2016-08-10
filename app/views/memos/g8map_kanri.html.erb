@@ -1,10 +1,10 @@
 <div class="tab-menu">
   <ul id="G8_map1">
-    <li id="G8_kouti" class="selected">高地ドラヴァニア</li>
-    <li id="G8_kuruzasu">クルザス西部</li>
-    <li id="G8_doraunn">ドラヴァニア雲海</li>
-    <li id="G8_abara">アバラシア雲海</li>
-    <li id="G8_kanri">地図管理</li>
+    <li id="G8_kouti" class="tab selected">高地ドラヴァニア</li>
+    <li id="G8_kuruzasu" class="tab">クルザス西部</li>
+    <li id="G8_doraunn" class="tab">ドラヴァニア雲海</li>
+    <li id="G8_abara" class="tab">アバラシア雲海</li>
+    <li id="G8_kanri" class="tab">地図管理</li>
   </ul>
 
   <div class="contents">
@@ -26,10 +26,10 @@
     </div>
     <div class="G8_kanri">
       <ul id="G8_map2">
-        <li id="G8_kouti_kanri" class="selected">高地ドラヴァニア</li>
-        <li id="G8_kuruzasu_kanri">クルザス西部</li>
-        <li id="G8_doraunn_kanri">ドラヴァニア雲海</li>
-        <li id="G8_abara_kanri">アバラシア雲海</li>
+        <li id="G8_kouti_kanri" class="tab selected">高地ドラヴァニア</li>
+        <li id="G8_kuruzasu_kanri" class="tab">クルザス西部</li>
+        <li id="G8_doraunn_kanri" class="tab">ドラヴァニア雲海</li>
+        <li id="G8_abara_kanri" class="tab">アバラシア雲海</li>
       </ul>
 
       <div class="contents_kanri">
@@ -80,12 +80,22 @@
         </div>
 
         <div class="show_map">
+          <ul>
+            <%= render @memos %>
+          </ul>
         </div>
 
       </div>
 
       <div class="user_kanri">
+        <div class="form2">
+          <%= form_for @memo, remote: true do |f| %>
+            <span>選択：</span><%= f.text_field :text %>
+            <span>所有者：</span><%= f.text_field :name %>
+            <%= f.submit '追加' %>
+          <% end %>
         </div>
+      </div>
 
     </div>
   </div>

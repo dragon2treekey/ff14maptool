@@ -10,6 +10,7 @@ $(window).on("load", function() {
       $(".map_serect").show();
       $(".user_kanri").show();
       $(".show_map").show();
+      $(".form2").show();
       $("#G8_map2 > li.selected").removeClass("selected");
       $("#G8_kouti_kanri").addClass("selected");
       $(".G8_kouti_kanri").show();

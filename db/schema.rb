@@ -11,13 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160810034518) do
+ActiveRecord::Schema.define(version: 20160810074053) do
 
   create_table "groups", force: :cascade do |t|
     t.string   "key",        limit: 255
     t.text     "detail",     limit: 65535
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false
+  end
+
+  create_table "memos", force: :cascade do |t|
+    t.string   "text",       limit: 255
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+    t.string   "name",       limit: 255
   end
 
   create_table "users", force: :cascade do |t|

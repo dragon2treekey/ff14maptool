@@ -33,14 +33,4 @@ $(window).on("load", function() {
       $("input#memo_text").val(this.id);
     });
 
-    // if ($("img#kouti_A").addEventChild("click")) {
-    //   // $("#memo_text").text("")
-    //   // $("#memo_text").text("高地ドラヴァニアA")
-    //   $("img#kouti_A").hide();
-    // }else{
-    //   $("#memo_text").text("");
-    //   $("#memo_text").text("エラー");
-    // }
-
-
 });

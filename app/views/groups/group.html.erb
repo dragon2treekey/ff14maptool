@@ -1,0 +1,20 @@
+<div class="maincontents2">
+  <div class="syousai">
+    <h1>現在使用中のグループ名一覧</h1>
+    <p>このサイトでは新規登録時に入力したグループ名を用いてグループ分けを行い、同じグループ内のメンバーで<br>地図の座標を共有できるように作成されています。よって、新しく登録する際には以下のグループ名一覧で<br>使用されていないグループ名の登録をお願い致します。<br>
+      <br><span class="kyoutyou">＊注意点＊</span><br>
+      既に存在するグループ名の文字を大文字に変えて登録する場合、<br>大文字、小文字が区別されず同じグループ名として登録されます。<br>例）"abcd"="Abcd"="ABCD"<br>よって、登録の際には<span class="kyoutyou">必ず一覧を見て被らないように登録する</span>ようお願い致します。</p>
+
+      <p><span class="kyoutyou">＊検索方法＊</span><br>
+      windowsの方→Ctrl+Fを押して文字を入力<br>
+      Macの方→Command+Fを押して文字を入力</p>
+
+  </div>
+
+  <div class="group_search">
+    <ul class="group_ul">
+      <%= render @groups %>
+    </ul>
+  </div>
+
+</div>

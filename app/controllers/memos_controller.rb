@@ -6,7 +6,7 @@ class MemosController < ApplicationController
   end
 
   def create
-    Memo.create(memo_params)
+    Memo.create(text: memo_params[:text], name: memo_params[:name], group_id: current_user.group_id)
     @memos = Memo.all.order(:text)
   end
 

@@ -5,6 +5,7 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable, authentication_keys: [:email, :group_key]
   belongs_to :group
+  has_many :memos
 
   before_validation :group_key_to_id, if: :has_group_key?
 

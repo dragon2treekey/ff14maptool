@@ -27,4 +27,20 @@ $(window).on("load", function() {
     $(".show_map").show();
     $("." + this.id).show(); // クリックされたボタンに対応する要素を表示する
   });
+
+
+    $("img.G8_map_syousai").click(function(){
+      $("input#memo_text").val(this.id);
+    });
+
+    // if ($("img#kouti_A").addEventChild("click")) {
+    //   // $("#memo_text").text("")
+    //   // $("#memo_text").text("高地ドラヴァニアA")
+    //   $("img#kouti_A").hide();
+    // }else{
+    //   $("#memo_text").text("");
+    //   $("#memo_text").text("エラー");
+    // }
+
+
 });

@@ -33,4 +33,5 @@ $(window).on("load", function() {
       $("input#memo_text").val(this.id);
     });
 
+
 });

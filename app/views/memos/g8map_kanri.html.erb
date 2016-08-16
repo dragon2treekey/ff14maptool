@@ -34,16 +34,18 @@
 
       <div class="contents_kanri">
         <div class="map_serect">
+          <%= button_tag 'マップ切り替え', class: "map_kirikae", :remote => true %>
           <div class="G8_kouti_kanri">
-            <%= image_tag 'kouti_A.jpg',:class => "G8_map_syousai", :id => "高地ドラヴァニアA", :size => "130x100" %>
-            <%= image_tag 'kouti_B.jpg',:class => "G8_map_syousai", :id => "高地ドラヴァニアB", :size => "130x100" %>
-            <%= image_tag 'kouti_C.jpg',:class => "G8_map_syousai", :id => "高地ドラヴァニアC", :size => "130x100" %>
-            <%= image_tag 'kouti_D.jpg',:class => "G8_map_syousai", :id => "高地ドラヴァニアD", :size => "130x100" %>
-            <%= image_tag 'kouti_E.jpg',:class => "G8_map_syousai", :id => "高地ドラヴァニアE", :size => "130x100" %>
-            <%= image_tag 'kouti_F.jpg',:class => "G8_map_syousai", :id => "高地ドラヴァニアF", :size => "130x100" %>
-            <%= image_tag 'kouti_G.jpg',:class => "G8_map_syousai", :id => "高地ドラヴァニアG", :size => "130x100" %>
-            <%= image_tag 'kouti_H.jpg',:class => "G8_map_syousai", :id => "高地ドラヴァニアH", :size => "130x100" %>
-            <%= image_tag 'kouti_I.jpg',:class => "G8_map_syousai", :id => "高地ドラヴァニアI", :size => "130x100" %>
+            <%= image_tag 'kouti_A.jpg',:class => "G8_map_syousai selected", :id => "高地ドラヴァニアA", :size => "130x100" %>
+            <%= image_tag 'kouti_B.jpg',:class => "G8_map_syousai selected", :id => "高地ドラヴァニアB", :size => "130x100" %>
+            <%= image_tag 'kouti_C.jpg',:class => "G8_map_syousai selected", :id => "高地ドラヴァニアC", :size => "130x100" %>
+            <%= image_tag 'kouti_D.jpg',:class => "G8_map_syousai selected", :id => "高地ドラヴァニアD", :size => "130x100" %>
+            <%= image_tag 'kouti_E.jpg',:class => "G8_map_syousai selected", :id => "高地ドラヴァニアE", :size => "130x100" %>
+            <%= image_tag 'kouti_F.jpg',:class => "G8_map_syousai selected", :id => "高地ドラヴァニアF", :size => "130x100" %>
+            <%= image_tag 'kouti_G.jpg',:class => "G8_map_syousai selected", :id => "高地ドラヴァニアG", :size => "130x100" %>
+            <%= image_tag 'kouti_H.jpg',:class => "G8_map_syousai selected", :id => "高地ドラヴァニアH", :size => "130x100" %>
+            <%= image_tag 'kouti_I.jpg',:class => "G8_map_syousai selected", :id => "高地ドラヴァニアI", :size => "130x100" %>
+            <%= image_tag 'koutidora_map.jpg', :class => "G8_map2", :size => "350x350", :style => "display: none" %>
           </div>
           <div class="G8_kuruzasu_kanri">
             <%= image_tag 'kuruzasu_A.jpg',:class => "G8_map_syousai", :id => "クルザス西部A", :size => "130x100" %>
@@ -53,6 +55,7 @@
             <%= image_tag 'kuruzasu_E.jpg',:class => "G8_map_syousai", :id => "クルザス西部E", :size => "130x100" %>
             <%= image_tag 'kuruzasu_F.jpg',:class => "G8_map_syousai", :id => "クルザス西部F", :size => "130x100" %>
             <%= image_tag 'kuruzasu_G.jpg',:class => "G8_map_syousai", :id => "クルザス西部G", :size => "130x100" %>
+            <%= image_tag 'kuruzasu_map.jpg', :class => "G8_map2", :size => "350x350", :style => "display: none" %>
           </div>
           <div class="G8_doraunn_kanri">
             <%= image_tag 'doraunn_A.jpg',:class => "G8_map_syousai", :id => "ドラヴァニア雲海A", :size => "130x100" %>
@@ -64,6 +67,7 @@
             <%= image_tag 'doraunn_G.jpg',:class => "G8_map_syousai", :id => "ドラヴァニア雲海G", :size => "130x100" %>
             <%= image_tag 'doraunn_H.jpg',:class => "G8_map_syousai", :id => "ドラヴァニア雲海H", :size => "130x100" %>
             <%= image_tag 'doraunn_I.jpg',:class => "G8_map_syousai", :id => "ドラヴァニア雲海I", :size => "130x100" %>
+            <%= image_tag 'doraunn_map.jpg', :class => "G8_map2", :size => "350x350", :style => "display: none" %>
           </div>
           <div class="G8_abara_kanri">
             <%= image_tag 'abara_A.jpg',:class => "G8_map_syousai", :id => "アバラシア雲海A", :size => "130x100" %>
@@ -76,6 +80,7 @@
             <%= image_tag 'abara_H.jpg',:class => "G8_map_syousai", :id => "アバラシア雲海H", :size => "130x100" %>
             <%= image_tag 'abara_I.jpg',:class => "G8_map_syousai", :id => "アバラシア雲海I", :size => "130x100" %>
             <%= image_tag 'abara_J.jpg',:class => "G8_map_syousai", :id => "アバラシア雲海J", :size => "130x100" %>
+            <%= image_tag 'abara_map.jpg', :class => "G8_map2", :size => "350x350", :style => "display: none" %>
           </div>
         </div>
 

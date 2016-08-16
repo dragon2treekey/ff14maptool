@@ -33,5 +33,20 @@ $(window).on("load", function() {
       $("input#memo_text").val(this.id);
     });
 
+  //画像切り替え
+    var i = 0;
+    $(".map_kirikae").on("click", function() {
+      i++;
+      console.log(i);
+
+      if (i % 2 == 0){
+        $(".G8_map2").hide();
+        $(".G8_map_syousai").show();
+      }else{
+        $(".G8_map_syousai").hide();
+        $(".G8_map2").show();
+      }
+
+    });
 
 });

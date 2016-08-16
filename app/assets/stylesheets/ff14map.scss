@@ -41,9 +41,9 @@ h1,h2,h3,h4,h5,h6,p {
   height: 502px;
 
 .slideshow_contents{
-  width: 300px;
   height: 302px;
-  margin: 0 auto;
+  margin-left: 5px;
+  margin-top: 5px;
 }
 
 
@@ -65,9 +65,11 @@ h1,h2,h3,h4,h5,h6,p {
 
     .news_contents{
       width: 440px;
-      height: 390px;
+      height: 385px;
       margin: 0 auto;
       border-style: groove none none none;
+      overflow:scroll;
+      overflow-x:hidden;
 
 
       p.times{

@@ -37,7 +37,6 @@ $(window).on("load", function() {
     var i = 0;
     $(".map_kirikae").on("click", function() {
       i++;
-      console.log(i);
 
       if (i % 2 == 0){
         $(".G8_map2").hide();

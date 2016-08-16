@@ -21,12 +21,11 @@ h1,h2,h3,h4,h5,h6,p {
 
   h1{
     font-size: 25px;
+  }
 
-    .grid-6{
-      float: right;
-      margin-right: 10px;
-    }
-
+  .grid-6{
+    float: right;
+    margin-right: 10px;
   }
 
 }
@@ -40,11 +39,11 @@ h1,h2,h3,h4,h5,h6,p {
   width: 1263px;
   height: 502px;
 
-.slideshow_contents{
-  height: 302px;
-  margin-left: 5px;
-  margin-top: 5px;
-}
+  .slideshow_contents{
+    height: 302px;
+    margin-left: 5px;
+    margin-top: 5px;
+  }
 
 
 
@@ -76,6 +75,7 @@ h1,h2,h3,h4,h5,h6,p {
         font-family: Times New Roman;
         font-size: 15px;
         padding: 5px 0;
+        text-align: center;
       }
 
       p.news_naiyou{
@@ -83,6 +83,7 @@ h1,h2,h3,h4,h5,h6,p {
         font-size: 20px;
         padding: 5px 0;
         border-style: none none groove none;
+        text-align: center;
       }
     }
   }

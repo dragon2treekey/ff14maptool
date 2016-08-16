@@ -12,37 +12,46 @@ h1,h2,h3,h4,h5,h6,p {
 .maincontents2{
   width: 1263px;
 
-  .syousai{
-    width: 1000px;
-    margin: 0 auto;
-    font-family: Times New Roman;
-    font-size: 15px;
-    border-bottom: groove;
+  .site{
+    width: 1100px;
+    background-color: #fff;
+    border-style: solid;
+    border-color: #A9A9A9;
+    border-radius: 10px;
+    margin: 20px auto;
 
-    .kyoutyou{
-      color: red;
-    }
-
-    p{
-      font-size: 20px;
-      text-align: center;
-    }
-  }
-
-  .group_search{
-    width: 800px;
-
-    .group_ul{
+    .syousai{
       width: 1000px;
-      padding: 0px;
-      margin-left: 131px;
-      text-align: center;
+      margin: 0 auto;
+      font-family: Times New Roman;
+      font-size: 15px;
+      border-bottom: groove;
 
-      li{
-        display: inline-block;
-        margin-left: 20px;
-        margin-top: 10px;
-        font-size: 30px;
+      .kyoutyou{
+        color: red;
+      }
+
+      p{
+        font-size: 20px;
+        text-align: center;
+      }
+    }
+
+    .group_search{
+      width: 800px;
+      margin: 0 auto;
+
+      .group_ul{
+        width: 800px;
+        padding: 0px;
+        text-align: center;
+
+        li{
+          display: inline-block;
+          margin-left: 20px;
+          margin-top: 10px;
+          font-size: 30px;
+        }
       }
     }
   }

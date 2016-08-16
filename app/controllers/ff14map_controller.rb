@@ -4,4 +4,10 @@ class Ff14mapController < ApplicationController
   def index
   end
 
+  def news1
+  end
+
+  def how_to
+  end
+
 end

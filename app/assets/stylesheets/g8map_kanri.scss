@@ -2,87 +2,43 @@ body{
   background-color: #f5f5f5;
 }
 
-.tab-menu {
-  width: 1000px;
-  margin-left: 30px;
+.map_contents{
+  position: relative;
 
-  p {
-    font-color: red;
-  }
-
-  ul { /* .tab-menuの中のulに対する記述 */
-    margin: 0;
-    padding: 0;
-    margin-top: 5px;
-  }
-
-  .tab { /* .tab-menuの中のli */
-    display: inline-block;
-    width: 120px;
-    height: 22px;
-    padding: 10px 10px 5px;
-    cursor: pointer;
-    background-color: #AECD6A;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    font-size: 14px;
-    color: #fff;
+  .kenri2{
+    width: 300px;
+    height: 32px;
+    background-color: #fff;
+    border-style: solid;
+    border-color: #A9A9A9;
+    border-radius: 10px;
+    float: left;
+    position: absolute;
+    top: 42px;
+    left: 890px;
     text-align: center;
 
-    &.selected {/* .tab-menuの中のliの内、.selectedが与えられているものに対する記述 */
-      background-color: #fff;
-      color: #AECD6A;
+    .kenri_p{
+      font-size: 12px;
+      padding: 5px;
     }
   }
-}
 
-.contents {
-  background-color: #fff;
-  height: 465px;
-  width: 1165px;
-  padding: 10px;
+  .tab-menu {
+    width: 1000px;
+    margin-left: 30px;
 
-  .G8_map{
-      margin-top: 20px;
-      margin-left: 50px;
-      float: left;
-  }
+    p {
+      font-color: red;
+    }
 
-  .G8_mini{
-      margin-top: 20px;
-      margin-left: 20px;
-      margin-bottom: 30px;
-      float: left;
-  }
-
-  .G8_kuruzasu_mini{
-      margin-left: 20px;
-      margin-top: 60px;
-      float: left;
-  }
-
-  .G8_kuruzasu { /* .contentsの中の.rightに対する記述 */
-    display: none; /* 最初、右のコンテンツは非表示にする */
-  }
-
-  .G8_doraunn { /* .contentsの中の.rightに対する記述 */
-    display: none; /* 最初、右のコンテンツは非表示にする */
-  }
-
-  .G8_abara { /* .contentsの中の.rightに対する記述 */
-    display: none; /* 最初、右のコンテンツは非表示にする */
-  }
-
-  .G8_kanri { /* .contentsの中の.rightに対する記述 */
-    display: none; /* 最初、右のコンテンツは非表示にする */
-
-    ul { /* G8_kanriの中のulに対する記述 */
+    ul { /* .tab-menuの中のulに対する記述 */
       margin: 0;
       padding: 0;
-      margin-left: 7px;
+      margin-top: 5px;
     }
 
-    .tab { /* G8_kanriの中のli */
+    .tab { /* .tab-menuの中のli */
       display: inline-block;
       width: 120px;
       height: 22px;
@@ -96,71 +52,139 @@ body{
       text-align: center;
 
       &.selected {/* .tab-menuの中のliの内、.selectedが与えられているものに対する記述 */
-        background-color: #f5f5f5;
-        color: #FF4500;
+        background-color: #fff;
+        color: #AECD6A;
       }
     }
+  }
 
-    .contents_kanri{
-      background-color: #fff;
-      height: 380px;
-      width: 1165px;
-      padding: 0px;
+  .contents {
+    background-color: #fff;
+    height: 465px;
+    width: 1165px;
+    padding: 10px;
 
-      .map_serect{
-        background-color: #f5f5f5;
-        /*border-style:groove;*/
-        height: 365px;
-        width: 555px;
-        padding: 10px;
-        margin-left: 7px;
+    .G8_map{
+        margin-top: 40px;
+        margin-left: 50px;
         float: left;
+    }
 
-        .G8_map2{
-          margin-top: 0px;
-          margin-left: 100px;
-        }
+    .G8_mini{
+        margin-top: 40px;
+        margin-left: 20px;
+        margin-bottom: 30px;
+        float: left;
+    }
 
-        .G8_map_syousai{
-          margin-left: 3px;
-          margin-top: 10px;
+    .G8_kuruzasu_mini{
+        margin-left: 20px;
+        margin-top: 80px;
+        float: left;
+    }
+
+    .G8_kuruzasu { /* .contentsの中の.rightに対する記述 */
+      display: none; /* 最初、右のコンテンツは非表示にする */
+    }
+
+    .G8_doraunn { /* .contentsの中の.rightに対する記述 */
+      display: none; /* 最初、右のコンテンツは非表示にする */
+    }
+
+    .G8_abara { /* .contentsの中の.rightに対する記述 */
+      display: none; /* 最初、右のコンテンツは非表示にする */
+    }
+
+    .G8_kanri { /* .contentsの中の.rightに対する記述 */
+      display: none; /* 最初、右のコンテンツは非表示にする */
+
+      ul { /* G8_kanriの中のulに対する記述 */
+        margin: 0;
+        padding: 0;
+        margin-left: 7px;
+      }
+
+      .tab { /* G8_kanriの中のli */
+        display: inline-block;
+        width: 120px;
+        height: 22px;
+        padding: 10px 10px 5px;
+        cursor: pointer;
+        background-color: #AECD6A;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        font-size: 14px;
+        color: #fff;
+        text-align: center;
+
+        &.selected {/* .tab-menuの中のliの内、.selectedが与えられているものに対する記述 */
+          background-color: #f5f5f5;
+          color: #FF4500;
         }
       }
 
-      .show_map{
-        background-color: #f5f5f5;
-        border-style:groove;
-        height: 425px;
-        width: 570px;
-        float: left;
+      .contents_kanri{
+        background-color: #fff;
+        height: 380px;
+        width: 1165px;
+        padding: 0px;
 
-        ul{
+        .map_serect{
+          background-color: #f5f5f5;
+          /*border-style:groove;*/
+          height: 365px;
+          width: 555px;
+          padding: 10px;
+          margin-left: 7px;
+          float: left;
 
-          li{
-            margin-left: 20px;
-            margin-top: 10px;
-            font-size: 20px;
+          .G8_map2{
+            margin-top: 0px;
+            margin-left: 100px;
           }
 
+          .G8_map_syousai{
+            margin-left: 3px;
+            margin-top: 10px;
+          }
         }
+
+        .show_map{
+          background-color: #f5f5f5;
+          border-style:groove;
+          height: 425px;
+          width: 570px;
+          float: left;
+
+          ul{
+
+            li{
+              margin-left: 20px;
+              margin-top: 10px;
+              font-size: 20px;
+            }
+
+          }
+        }
+
       }
 
-    }
+      .user_kanri{
+        background-color: #fff;
+        border-style:groove;
+        height: 40px;
+        width: 572px;
+        margin-top: 5px;
+        margin-left: 7px;
+        position: relative;
 
-    .user_kanri{
-      background-color: #fff;
-      border-style:groove;
-      height: 40px;
-      width: 572px;
-      margin-top: 5px;
-      margin-left: 7px;
-      position: relative;
-
-      .form2{
-        position: absolute;
-        top: 12px;
-        left: 90px;
+        .form2{
+          position: absolute;
+          top: 12px;
+          left: 90px;
+        }
       }
     }
   }
 }
+

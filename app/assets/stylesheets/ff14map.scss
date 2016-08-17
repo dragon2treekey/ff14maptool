@@ -38,6 +38,7 @@ h1,h2,h3,h4,h5,h6,p {
 .maincontents{
   width: 1263px;
   height: 502px;
+  position: relative;
 
   .slideshow_contents{
     height: 302px;
@@ -49,13 +50,13 @@ h1,h2,h3,h4,h5,h6,p {
 
   .news{
     width: 500px;
-    height: 450px;
+    height: 350px;
     background-color: #fff;
     border-style: solid;
     border-color: #A9A9A9;
     border-radius: 10px;
     float: left;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-left: 100px;
 
     .daimei{
@@ -64,7 +65,7 @@ h1,h2,h3,h4,h5,h6,p {
 
     .news_contents{
       width: 440px;
-      height: 385px;
+      height: 255px;
       margin: 0 auto;
       border-style: groove none none none;
       overflow:scroll;
@@ -88,6 +89,29 @@ h1,h2,h3,h4,h5,h6,p {
     }
   }
 
+  .kenri{
+    width: 500px;
+    height: 90px;
+    background-color: #fff;
+    border-style: solid;
+    border-color: #A9A9A9;
+    border-radius: 10px;
+    float: left;
+    position: absolute;
+    top: 400px;
+    left: 100px;
+
+    .kenri_hyouki{
+      width: 490px;
+      height: 70px;
+      background-color: #fff;
+      margin-top: 10px;
+      margin-left: 5px;
+      text-align: center;
+
+    }
+  }
+
   .contact{
     width: 500px;
     height: 450px;
@@ -96,7 +120,7 @@ h1,h2,h3,h4,h5,h6,p {
     border-color: #A9A9A9;
     border-radius: 10px;
     float: left;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-left: 63px;
 
 

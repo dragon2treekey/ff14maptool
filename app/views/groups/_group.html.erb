@@ -1,3 +1,9 @@
-<li>
+<% if user_signed_in? %>
+  <p class="group_kakunin">あなたのグループは「<span class="kyoutyou"><%= group.key %></span>」です。</p>
+  <p class="text_align"><%= link_to '変更する場合はこちら', edit_user_registration_path(current_user), method: :get %></p>
+<% else %>
+  <li>
   <%= group.key %>
-</li>
+  </li>
+<% end %>
+

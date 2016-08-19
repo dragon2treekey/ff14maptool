@@ -1,7 +1,11 @@
 class GroupsController < ApplicationController
   def group
-    @groups = Group.all.order(:key)
-    @group = Group.new
-    @mygroups = Group.where(id: current_user.group_id)
+    if user_signed_in?
+      @mygroups = Group.where(id: current_user.group_id)
+
+    else
+      @groups = Group.all.order(:key)
+      @group = Group.new
+    end
   end
 end

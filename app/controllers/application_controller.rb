@@ -14,4 +14,13 @@ class ApplicationController < ActionController::Base
     #account_updateのときに、group_keyも許可する
     devise_parameter_sanitizer.permit(:account_update, keys: [ :group_key])
   end
+
+  def after_sign_in_path_for(resource)
+    index_path
+  end
+
+  def after_sign_out_path_for(resource)
+    index_path
+  end
+
 end

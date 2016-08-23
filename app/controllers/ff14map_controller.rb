@@ -4,6 +4,10 @@ class Ff14mapController < ApplicationController
   def index
   end
 
+  def rp
+    render :layout => 'rp_template'
+  end
+
   def news1
   end
 

@@ -52,7 +52,7 @@ $(window).on("load", function() {
   var kousin = 0;
   $(".kousin").on("click", function() {
     kousin++;
-    console.log(kousin);
+    // console.log(kousin);
 
     if (kousin % 2 == 0){
       $('.kousin').text("自動更新:OFF")

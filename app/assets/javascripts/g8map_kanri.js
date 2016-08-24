@@ -62,7 +62,7 @@ $(window).on("load", function() {
       var zkousin = 0;
       var zkousin_z = setInterval(function(){
         zkousin++;
-        console.log(zkousin);
+        // console.log(zkousin);
 
         if (kousin % 2 == 0){
           clearInterval(zkousin_z);

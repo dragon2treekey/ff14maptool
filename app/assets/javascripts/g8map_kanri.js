@@ -29,23 +29,61 @@ $(window).on("load", function() {
   });
 
 
-    $("img.G8_map_syousai").click(function(){
-      $("input#memo_text").val(this.id);
-    });
+  $("img.G8_map_syousai").click(function(){
+    $("input#memo_text").val(this.id);
+  });
 
-  //画像切り替え
-    var i = 0;
-    $(".map_kirikae").on("click", function() {
-      i++;
+//画像切り替え
+  var i = 0;
+  $(".map_kirikae").on("click", function() {
+    i++;
 
-      if (i % 2 == 0){
-        $(".G8_map2").hide();
-        $(".G8_map_syousai").show();
-      }else{
-        $(".G8_map_syousai").hide();
-        $(".G8_map2").show();
-      }
+    if (i % 2 == 0){
+      $(".G8_map2").hide();
+      $(".G8_map_syousai").show();
+    }else{
+      $(".G8_map_syousai").hide();
+      $(".G8_map2").show();
+    }
 
-    });
+  });
+
+//自動更新
+  var kousin = 0;
+  $(".kousin").on("click", function() {
+    kousin++;
+    console.log(kousin);
+
+    if (kousin % 2 == 0){
+      $('.kousin').text("自動更新:OFF")
+
+    }else{
+      $('.kousin').text("自動更新:ON")
+      var zkousin = 0;
+      var zkousin_z = setInterval(function(){
+        zkousin++;
+        console.log(zkousin);
+
+        if (kousin % 2 == 0){
+          clearInterval(zkousin_z);
+        }
+
+        if (zkousin % 15 == 0){
+          $.ajax({
+          url: "/g8map?method=patch",
+          type: "GET",
+          data: {},
+          dataType: "script",
+          // success: function(data) {
+          //     console.log("自動更新に成功しました");
+          // },
+          // error: function(data) {
+          //     console.log("自動更新に失敗しました。");
+          // }
+          });
+        }
+      }, 100);
+    };
+  });
 
 });

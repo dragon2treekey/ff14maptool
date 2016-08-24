@@ -89,7 +89,8 @@
           </div>
 
           <div class="show_map">
-          <%= link_to '更新', method: :patch, remote: true %>
+          <%= button_tag '自動更新:OFF', class: "kousin", :remote => true %>
+          <%#= link_to '更新', method: :patch, remote: true %>
             <ul>
               <%= render @memos %>
             </ul>

@@ -1,16 +1,26 @@
-<%= image_tag 'titlelogo.jpg', :size => "1263x500", :id => "titlelogo" %>
-<%= link_to image_tag('loginlogo.png', :size => "200x200", :id => "loginlogo"), index_path, method: :get %>
-<%= image_tag 'haikei.jpg', :size => "1263x1900", :id => "haikei" %>
-<%= image_tag 'kyaltuti.png', :size => "600x80", :id => "kyaltuti" %>
-<%= image_tag 'tokutyou.png', :size => "300x80", :id => "tokutyou" %>
-<%= image_tag 'tokutyou123.png', :size => "1000x333", :id => "tokutyou123" %>
-<%= image_tag 'tokutyou_syousai.png', :size => "1000x900", :id => "tokutyou_syousai" %>
-<%= image_tag 'otomo.png', :size => "1000x100", :id => "otomo" %>
-<%= image_tag 'scrollup.png', :size => "100x100", :id => "top", :class => "pagetop"  %>
-<%= image_tag 'scrolldown.png', :size => "100x100", :id => "scroll", :class => "pagescroll"  %>
+<div id="loader-bg">
+  <div id="loading">
+    <%= image_tag 'ajax-loader.gif', :size => "50x50" %>
+  </div>
+</div>
 
-<footer class="mainfooter">
-  <p>記載されている会社名・製品名・システム名などは、各社の商標、または登録商標です。
-  <br>Copyright (C) 2010 - 2016 SQUARE ENIX CO., LTD. All Rights Reserved.
-  <br>©2016 dragon_2tree</p>
-</footer>
+<div class="animation">
+  <%= image_tag 'titlelogo.jpg', :size => "1263x500", :id => "titlelogo" %>
+  <%= link_to image_tag('loginlogo.png', :size => "200x200", :id => "loginlogo"), index_path, method: :get %>
+  <%= image_tag 'haikei.jpg', :size => "1263x2400", :id => "haikei" %>
+  <%= image_tag 'kyaltuti.png', :size => "600x80", :id => "kyaltuti" %>
+  <%= image_tag 'tokutyou.png', :size => "300x80", :id => "tokutyou" %>
+  <%= image_tag 'tokutyou123.png', :size => "1000x333", :id => "tokutyou123" %>
+  <%= image_tag 'tokutyou_syousai.png', :size => "1000x900", :id => "tokutyou_syousai" %>
+  <%= image_tag 'otomo.png', :size => "1000x100", :id => "otomo" %>
+  <%= image_tag 'scrollup.png', :size => "100x100", :id => "top", :class => "pagetop"  %>
+  <%= image_tag 'scrolldown.png', :size => "100x100", :id => "scroll", :class => "pagescroll"  %>
+
+  <%= video_tag("LPsyoukai.mp4", :controls => false, :autoplay => true, :loop => true, :size => "1100x433", :class => "LPsyoukai") %>
+
+  <footer class="mainfooter">
+    <p>記載されている会社名・製品名・システム名などは、各社の商標、または登録商標です。
+    <br>Copyright (C) 2010 - 2016 SQUARE ENIX CO., LTD. All Rights Reserved.
+    <br>©2016 dragon_2tree</p>
+  </footer>
+</div>
